@@ -23,8 +23,8 @@ router.post("/forgot-password", async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "devthegreat972004@gmail.com",
-      pass: "newt eiub cfir iqyj",
+      user: "devbhaikhalnayak@gmail.com",
+      pass: "gfdk paiw yvlc ppco",
     },
   });
 
