@@ -45,7 +45,7 @@ router.post("/:userId/internships", async (req, res) => {
     const internshipData = req.body;
 
     const user = await User.findById(userId);
-    if (!user || user.userType !== "recruiter" || user.userType !== "admin") {
+    if (!user || (user.userType !== "recruiter" && user.userType !== "admin")) {
       return res
         .status(404)
         .json({ message: "Recruiter not found or not authorized" });
