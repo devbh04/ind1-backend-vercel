@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema(
   {
     userType: {
       type: String,
-      enum: ["candidate", "recruiter", "admin"],
+      enum: ["candidate", "recruiter",  "mentor", "admin"],
       required: true,
     },
     username: {
